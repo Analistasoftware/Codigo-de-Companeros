@@ -33,6 +33,7 @@ public class maxsueldo {
 		long max = -INF;
 		boolean flag = true;
 		for(int i = 0; i<N; ++i) {
+			flag = true;
 			while(flag==true) {
 				try {
 				teclado = JOptionPane.showInputDialog(null, "Ingrese el "+(i+1)+ " sueldo:  ","Número de sueldos", 1);

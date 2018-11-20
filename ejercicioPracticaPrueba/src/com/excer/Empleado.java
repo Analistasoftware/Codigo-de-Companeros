@@ -6,9 +6,9 @@ public class Empleado {
 	private String nombres;
 	private String apellidos;
 	private String domicilio;
-	private double sueldo_Bruto;
+	private Double sueldo_Bruto;
 	//Constructor
-	public Empleado(String nuevoRut, String nuevoApellidos, String nuevoNombres, String nuevoDomicilio, double nuevoSueldo_Bruto) {
+	public Empleado(String nuevoRut, String nuevoApellidos, String nuevoNombres, String nuevoDomicilio, Double nuevoSueldo_Bruto) {
 		rut = nuevoRut;
 		nombres = nuevoNombres;
 		apellidos = nuevoApellidos;

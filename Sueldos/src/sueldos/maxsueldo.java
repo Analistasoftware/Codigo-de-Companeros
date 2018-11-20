@@ -1,5 +1,6 @@
 package sueldos;
 import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
 
 public class maxsueldo {
 	
@@ -9,8 +10,7 @@ public class maxsueldo {
 	public static void main(String[] args) {
 		int numSueldos = inicializar();
 		maxSueldo(numSueldos);
-		
-	}
+	} 
 	
 	public static int inicializar() {
 		boolean flag = true;
@@ -49,8 +49,10 @@ public class maxsueldo {
 				}
 			
 		}
+		DecimalFormat formato = new DecimalFormat ("$#,##0");
+		String fmax = formato.format(max);
 		if(max!=-INF) {
-			JOptionPane.showMessageDialog(null, "El sueldo máximo es: "+max, "Sueldo máximo", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(null, "El sueldo máximo es: "+fmax, "Sueldo máximo", JOptionPane.PLAIN_MESSAGE);
 		} else {
 			JOptionPane.showMessageDialog(null, "No ingreso ningún sueldo", "Sueldo máximo", JOptionPane.PLAIN_MESSAGE);
 		}
